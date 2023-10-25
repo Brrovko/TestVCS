@@ -10,12 +10,14 @@ public class Person {
         this.stagRabotyLet = stagRabotyLet;
     }
 
-    double   oklad;
+    double oklad;
     int stagRabotyLet;
-    double raschenZP(double oklad, int stagRabotyLet){
-        return oklad+oklad*stagRabotyLet/10;
+
+    double raschenZP(double oklad, int stagRabotyLet) {
+        return oklad + oklad * stagRabotyLet / 10;
     }
-    void generationSms(String name, double oklad, int stagRabotyLet){
-        System.out.println("Сотруднику "+idPerson+" "+name+" насчитано зарплаты - "+ raschenZP(oklad,stagRabotyLet)+"$");
+
+    void generationSms(String name, double oklad, int stagRabotyLet) {
+        System.out.println("Сотруднику " + idPerson + " " + name + " насчитано зарплаты - " + raschenZP(oklad, stagRabotyLet) + "$");
     }
 }
